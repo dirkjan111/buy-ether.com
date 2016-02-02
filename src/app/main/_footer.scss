@@ -1,0 +1,12 @@
+/* footer -------------------------- */
+footer {
+	background:rgba(0,0,0,.8);
+    color: $white;
+    font-size: 16px;
+    line-height: 28px;
+    padding: 90px 0;
+    text-align: center;
+    min-height:10em;
+    line-height:10em;
+    @include sizing;
+}

@@ -1,0 +1,108 @@
+/* header -------------------------- */
+header {
+    padding: 0;
+    background: url('/assets/images/vitalik.jpg') no-repeat 50% 20%;
+    background-size:cover;
+    font: 24px/36px $fontCaption;
+    color: $white;
+    @include bgsize;
+    @include sizing;
+    .layer {
+        height:100%;
+        padding:104px 0;
+        background-color:rgba(0,0,0,.5);
+    }
+    #cf_widget_iframe {
+        position: absolute;
+        right:15%;
+        top:15%;
+        background-color:rgba(255,255,255,.5);
+    }
+
+    h1 {
+        font-size: 60px;
+        line-height: 60px;
+        font-weight: $f-medium;
+        margin-bottom: 38px;
+        span {
+            font-weight: $f-extra-light;
+        }
+    }
+    .autor {
+        padding: 12px 0 0;
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: bold;
+        color: $white;
+        a {
+            color: $white;
+            &:hover {
+                color: $white;
+                @include opacity(0.8);
+            }
+            &:active {
+                color: $white;
+                @include opacity(1);
+            }
+        }
+    }
+    .buttons-wrapper {
+        padding-top: 53px;
+        .button-stripe {
+            margin-left: 14px;
+        }
+    }
+}
+.header-img {
+    float: right;
+}
+.header-wrapper {
+    padding-top: 87px;
+    max-width: 655px
+}
+
+div.language-switch {
+
+
+    a {
+        display: inline-block;
+        width:3em;
+        height:1.8em;
+        border:2px solid #fff;
+        opacity:0.25;
+        background-position: 50% 0%;
+        background-size: cover;
+        transition: opacity 1s;
+        margin-right:0.6em;
+
+
+        &.cn {
+            background-image: url('/assets/images/china.png');
+
+        }
+
+        &.en {
+            background-image: url('/assets/images/english.png');
+        }
+
+        &:hover {
+            opacity: 1;
+            cursor: pointer;
+            text-decoration: none!important;
+        }
+
+        span {
+            opacity: 1;
+            color:#fff;
+            font-size: .75em;
+            position: relative;
+            bottom:-2.3em;
+            text-decoration: none;
+            line-height:0.5em!important;
+        }
+
+
+
+    }
+
+}
