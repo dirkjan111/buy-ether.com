@@ -8,10 +8,7 @@
   /** @ngInject */
   function runBlock($rootScope, $translate) {
 
-    //$log.debug('runBlock end');
-
-
-    $rootScope.$on('$stateChangeStart', function(event, toState, toParams, fromState, fromParams) {
+    $rootScope.$on('$stateChangeStart', function(event, toState, toParams) {
       $translate.use(toParams.locale);
     });
 
