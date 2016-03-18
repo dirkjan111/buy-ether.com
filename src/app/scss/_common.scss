@@ -124,11 +124,7 @@ input:focus::-webkit-input-placeholder {
 }
 
 
-iframe.innocoin {
-    border:6px solid rgba(255,255,255,.5);
-}
-
-.logo {
+gulp.logo {
     vertical-align: middle;
     color:rgba(255,255,255,.5);
     font-size:1.8em;
@@ -156,5 +152,42 @@ div.iframe {
     @media (min-width: 0) and (max-width: 300px) {
         padding:2px!important;
     }
+
+}
+
+
+iframe.innocoin {
+    border:6px solid rgba(255,255,255,.5);
+
+
+    @media (min-width: 301px) and (max-width: 400px) {
+        border-width: 3px!important;
+    }
+
+    @media (min-width: 251px) and (max-width: 300px) {
+        border-width: 1px!important;
+    }
+
+    @media (min-width: 0) and (max-width: 251px) {
+        border-width: 0px!important;
+    }
+
+}
+
+div.iframe {
+
+
+    @media (min-width: 351px) and (max-width: 450px) {
+        padding:3px!important;
+    }
+
+    @media (min-width: 251px) and (max-width: 350px) {
+        padding:2px!important;
+    }
+
+    @media (min-width: 0) and (max-width: 250px) {
+        padding:0px!important;
+    }
+
 
 }
