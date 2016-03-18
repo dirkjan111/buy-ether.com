@@ -29,16 +29,16 @@ $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/"
 
 
 
-@import "main/variables";
-@import "main/mixins";
-@import "main/reset";
-@import "main/common";
-@import "main/header";
-@import "main/footer";
-@import "main/home";
-@import "main/content";
-@import "main/sidebar";
-@import "main/media";
+@import "scss/variables";
+@import "scss/mixins";
+@import "scss/reset";
+@import "scss/common";
+@import "scss/header";
+@import "scss/footer";
+@import "scss/home";
+@import "scss/content";
+@import "scss/sidebar";
+@import "scss/media";
 
 /**
  *  Do not remove the comments below. It's the markers used by gulp-inject to inject

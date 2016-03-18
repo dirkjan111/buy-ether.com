@@ -5,6 +5,7 @@ header {
     background-size:cover;
     font: 24px/36px $fontCaption;
     color: $white;
+
     @include bgsize;
     @include sizing;
     .layer {
@@ -28,6 +29,11 @@ header {
             font-weight: $f-extra-light;
         }
     }
+
+    div.wrap {
+        position: relative;
+    }
+
     .autor {
         padding: 12px 0 0;
         font-size: 14px;
@@ -57,12 +63,14 @@ header {
     float: right;
 }
 .header-wrapper {
-    padding-top: 87px;
     max-width: 655px
 }
 
 div.language-switch {
 
+    float:right;
+    margin-right:2rem;
+    margin-top:-3em;
 
     a {
         display: inline-block;

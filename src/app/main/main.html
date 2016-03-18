@@ -5,20 +5,28 @@
 
 
       <div class="wrap">
+
         <div class="language-switch">
-          <a ng-click="changeLang('en')" class="flag en"><span translate="ENGLISH"></span></a>
-          <a ng-click="changeLang('cn')" class="flag cn"><span translate="CHINESE"></span></a>
+          <a class="flag en" ng-click="changeLang('english')"><span translate="ENGLISH"></span></a>
+          <a class="flag cn" ng-click="changeLang('chinese')"><span translate="CHINESE"></span></a>
         </div>
 
+        <div class="header-wrapper top50">
+          <a ui-sref="home" class="logo"><img src="/assets/images/ETH-alt.svg"/> <span translate="HEADER_H1">Buy-ether.com</span></a>
+        </div>
+
+        <div class="row top50">
+
+          <div class="col-md-6">
+            <p translate="HEADER_P1"></p>
+
+            <p translate="HEADER_P2" class="top50"></p>
+          </div>
 
 
-
-        <img src="assets/images/iPhone.png" height="532" width="252" alt="" class="header-img">
-        <div class="header-wrapper">
-          <h1 translate="HEADER_H1"></h1>
-          <p translate="HEADER_P1"></p>
-          <p class="autor" translate="HEADER_P2"></p>
-
+          <div class="col-md-6">
+            <iframe ng-src="{{iframe1}}" border="0" scrolling="no" class="innocoin w500 h550"></iframe>
+          </div>
 
         </div>
       </div>

@@ -122,3 +122,30 @@ a.button {
 input:focus::-webkit-input-placeholder {
     color: transparent;
 }
+
+
+iframe.innocoin {
+    border:6px solid rgba(255,255,255,.5);
+}
+
+.logo {
+    vertical-align: middle;
+    color:rgba(255,255,255,.5);
+    font-size:1.8em;
+    transition: color 1s;
+    img { height:50px;
+        vertical-align: middle;
+    }
+
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.top50 {
+    margin-top:50px;
+}
+
+.top100 {
+    margin-top: 100px;
+}
