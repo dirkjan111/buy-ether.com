@@ -8,7 +8,7 @@
   function MainController($scope, $translate, $state, $location, $rootScope, $sce) {
       var vm = this;
 
-      $scope.baseUrl = 'https://swap-v1.innocoin.com/#/';
+      $scope.baseUrl = 'https://swap.innocoin.com/v1/#/';
 
       $scope.updateIframes = function(lang) {
           var language = lang || $translate.use();

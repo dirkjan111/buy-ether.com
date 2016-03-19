@@ -191,3 +191,17 @@ div.iframe {
 
 
 }
+
+.logo {
+    vertical-align: middle;
+    color:rgba(255,255,255,.5);
+    font-size:1.8em;
+    transition: color 1s;
+    img { height:50px;
+        vertical-align: middle;
+    }
+
+    &:hover {
+        text-decoration: none;
+    }
+}
