@@ -11,7 +11,7 @@
 
     $rootScope.$state = $state;
     $rootScope.$stateParams = $stateParams;
-    $rootScope.locale = 'english';
+   // $rootScope.locale = 'english';
 
 
     $rootScope.$on('$stateChangeStart', function(event, toState, toParams) {
