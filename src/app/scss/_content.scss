@@ -82,6 +82,20 @@ h2,h3,h4{
 }
 
 
+.blog-content {
+    padding: 31px 0 45px;
+
+    h4 {
+        margin-bottom:1em;
+        font-weight: bold;
+    }
+}
+
+p {
+    margin-bottom:.5em;
+    color:#666;
+}
+
 .simple-content {
     h3 {
         font: $f-bold 32px/32px $fontCaption;

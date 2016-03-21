@@ -40,6 +40,8 @@ $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/"
 @import "scss/sidebar";
 @import "scss/media";
 
+.top50 {margin-top:50px;}
+
 /**
  *  Do not remove the comments below. It's the markers used by gulp-inject to inject
  *  all your sass files automatically

@@ -16,8 +16,33 @@
         url: '',
         templateUrl: 'app/main/main.html',
         controller: 'MainController',
-        controllerAs: 'main'
-      });
+        controllerAs: 'main',
+        data: {
+          english : {
+            pageTitle : 'Buy Ether (Ethereum)',
+            pageDescription : 'Ether (ETH) is a tradeable asset, you can buy it here on buy-ether.com'
+          },
+          chinese : {
+            pageTitle : '购买 Ether (以太坊 Ethereum)',
+            pageDescription : '以太坊(ETH)是一种可交易的资产, 很快你将可以从这里购买到以太坊.'
+          }
+        }
+      }).state('app.manual', {
+          url: '/manual-ethereum-wallet-installation-and-performing-btc-eth-exchange',
+          templateUrl: 'app/content/manual.html',
+          controller: 'MainController',
+          controllerAs: 'vm',
+          data: {
+            english : {
+              pageTitle : 'Ethereum wallet installation',
+              pageDescription : 'Manual Ethereum wallet installation and performing ether to bitcoin exchange'}
+            },
+            chinese : {
+              pageTitle : '购买 Ether (以太坊 Ethereum)',
+              pageDescription : '以太坊(ETH)是一种可交易的资产, 很快你将可以从这里购买到以太坊.'
+            }
+        });
+
 
     $urlRouterProvider.otherwise('/en');
   }

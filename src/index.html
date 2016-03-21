@@ -2,8 +2,8 @@
 <html ng-app="buyEther4Com">
   <head>
     <meta charset="utf-8">
-    <title translate-cloak translate="TITLE">Buy Ether (Ethereum)</title>
-    <meta name="description" translate translate-attr-content="DESCRIPTION">
+    <title ng-bind="$state.current.data[locale].pageTitle"></title>
+    <meta name="description" content="{{$state.current.data[locale].pageDescription}}">
     <meta name="keywords" content="ethereum, ether, bitcoin, eth, buy">
 
     <base href="/">
