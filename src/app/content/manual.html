@@ -1,4 +1,4 @@
-<div class="main">
+<div class="main" ng-if="locale=='english'">
     <header>
         <div class="layer">
             <div class="wrap">
@@ -14,7 +14,7 @@
                 <div class="row col-md-12 top50">
 
                     <div class="col-md-6">
-                        <iframe src="https://swap-v1.innocoin.com/#/?language=nederlands&partner_email=partner@innocoin.com&partner_address=3BfKMdyXzG8e8oHCb6YSGVRdASZ3XW6xni&partner_margin=1.25&source=BTC&target=ETH&target_amount=1&show_info=true&theme=random_grey_variations&rounded_corners=false&width=500&height=550&border=false&iframe=true" border="0" scrolling="no" class="innocoin w500 h550"></iframe>
+                        <iframe src="https://swap-v1.innocoin.com/#/?language=english&partner_email=partner@innocoin.com&partner_address=3BfKMdyXzG8e8oHCb6YSGVRdASZ3XW6xni&partner_margin=1.25&source=BTC&target=ETH&target_amount=1&show_info=true&theme=random_grey_variations&rounded_corners=false&width=500&height=550&border=false&iframe=true" border="0" scrolling="no" class="innocoin w500 h550"></iframe>
                     </div>
 
                     <div class="col-md-6">
@@ -208,6 +208,224 @@
 
     </div>
 </div>
+
+
+<div class="main" ng-if="locale=='chinese'">
+    <header>
+        <div class="layer">
+            <div class="wrap">
+
+                <a ui-sref="app.root" class="logo"><img src="/assets/images/ETH-alt.svg"/>  buy-ether.com</a>
+
+
+                <div class="col-md-12 top50">
+                    <h1>指南 - 以太坊(Ethereum)钱包安装教程以及使用以太交易小部件购买以太坊.</h1>
+                    <p>这个教程展示以太坊(Ethereum)官方钱包Mist的安装步骤以及如何使用比特币购买以太坊。</p>
+                </div>
+
+                <div class="row col-md-12 top50">
+
+                    <div class="col-md-6">
+                        <iframe src="https://swap-v1.innocoin.com/#/?language=chinese&partner_email=partner@innocoin.com&partner_address=3BfKMdyXzG8e8oHCb6YSGVRdASZ3XW6xni&partner_margin=1.25&source=BTC&target=ETH&target_amount=1&show_info=true&theme=random_grey_variations&rounded_corners=false&width=500&height=550&border=false&iframe=true" border="0" scrolling="no" class="innocoin w500 h550"></iframe>
+                    </div>
+
+                    <div class="col-md-6">
+                        <p> <i class="fa fa-arrow-left"></i>左边即是以太坊的购买小部件, 如果你已经拥有比特币, 那现在就可以使用这个小窗口购买以太坊。我们将在此教程解释如何使用这个小部件。</p>
+
+                        <ol>
+                            <li>首先下载并按照以太坊钱包，并确保升级到最新版本。</li>
+
+                            <li> 然后启动比特币钱包并更新区块数据。</li>
+
+                            <li>现在来到购买小窗口, 发起一个新订单并如输入想购买的数量。</li>
+                        </ol>
+                        <p>请继续阅读下面信息
+                            <i class="fa fa-arrow-down"></i></p>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="blog-content clearfix">
+        <div class="wrap">
+
+            <h2>以太坊钱包/购买以太坊教程</h2>
+
+            <p>你已拥有比特币且想入手一些以太坊- 一种以以太坊网络为基础的币或者说是以以太坊为标志的币, 但又不知道如何做?</p>
+
+            <h4 class="top50">那你来对了地方, 我们手把手来教你。</h4>
+
+            <p>首先,该教程默认你已拥有若干比特币。如果你暂时没有比特币，那在目前的情况下，还无法做到使用信用卡或其他方法购买以太坊，我们慢慢解释。</p>
+
+            <p>本系统将比特币转换成以太坊的过程其实十分简单, 几个步骤便可完成整个过程.  你所需的首先是以太坊官方钱包还有一个比特币客户端, 当然得有一些比特币. 两个钱包都必须完成与网络的同步. 与网络同步意味着客户端升级到最新版且下载了完整的最新的区块链.</p>
+
+
+            <div class="row top50">
+
+                <div class="col-md-12">
+
+                    <div class="row">
+                        <div class="col-md-8">
+                            <h4>步骤 1. 下载官方钱包 MIST</h4>
+
+                            <p>第一步就是下载MIST钱包</p>
+
+                            <p>有几种方法供选择, 最便利的途径是直接访问 <a href="https://ethereum.org/">ethereum.org</a>, 滑动页面, 找到下载按钮, 页面会自动为你适配匹配的版本(例如windows, MACOS). 然后同意网页的免责声明(如果弹出警告称以太坊不承担任何责任的话). </p>
+
+                        </div>
+
+                        <div class="col-md-4 text-right">
+
+                            <a href="https://ethereum.org/"><img src="/assets/images/mist.png" style="width:250px;"/></a>
+                        </div>
+                    </div>
+
+
+                    <p>你也可以查看 <a href="https://github.com/ethereum/mist/releases">github</a> 是否有新的更新版本.</p>
+
+                    <p>完成安装后须打开客户端让其完成区块链的下载, 不要担心, 这个过程是完全自动化的. 区块链是以太坊网络所有交易的公开账簿, 因此需要些时间来完成所有数据的下载. </p>
+
+                    <p>数据更新后你将见到以太坊钱包的界面:</p>
+
+                    <img src="/assets/images/ethereum-wallet.jpg"/>
+
+                    <p class="top50">
+                        “账户”与”钱包”有一些区别,  在第一次打开钱包的时候, 你就自动得到了一个账户(其被称为Etherbase), 在该账户你可以发送与接收以太坊,  唯一不足的就是你无法看到交易详情.
+                    </p>
+
+                    <p>钱包的功能与账户一致，且可查看交易. 在你创建一个钱包(在钱包里你可以查看交易)之前, 出于防止垃圾账户的产生以及他人滥用钱包的情况出现, 你必须往你的以太坊账户发送一笔小额的币以激活钱包. </p>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="row top50">
+
+                <div class="col-md-12">
+                    <h4>步骤 2. 为你的MIST钱包做个备份</h4>
+
+                    <p>Go to Accounts -> Backup -> Accounts.</p>
+
+                    <p>将钱包备份保存在安全的地方, 最好是个外置硬盘或者储存在一个经常备份的路径下吧.</p>
+                </div>
+
+            </div>
+
+            <div class="row top50">
+
+
+
+                <div class="col-md-12">
+                    <h4>步骤 3.  打开比特币钱包并更新区块数据</h4>
+
+                    <p>如果你使用的是比特币QT客户端(比特币标准钱包), 你能在客户端界面的右下角查看客户端是否已经同步完数据. 如果你长时间没打开客户端, 那可能就要花点时间来同步数据. 如果你使用的是以太坊或者在线第三方钱包, 那就无需同步数据直接可以使用了.
+                    </p>
+
+                    <p>手机版本的钱包易用, 例如来自 <a href="http://www.blockchain.info">blockchain.info</a> 的移动版本钱包就是目前先进的移动钱包之一, 同时扫描QR(二维码)也很简单.</p>
+
+                    <p>Once a wallet is up-to-date you are ready for the next step.</p>
+                </div>
+
+            </div>
+
+
+            <div class="row top50">
+
+                <div class="col-md-12">
+                    <h4>步骤 4. 复制你的基础账号(ETHERBASE)中的一个以太坊地址</h4>
+
+                    <p>参考下方图像可知要复制的地址:</p>
+
+                    <img src="/assets/images/etherbase.png"/>
+
+                    <p>你可使用鼠标直接双击选中要复制的地址.</p>
+
+                </div>
+
+            </div>
+
+            <div class="row top50">
+
+                <div class="col-md-6">
+                    <h4>步骤 5. 将你的以太坊地址粘贴到小窗口里并完成表格</h4>
+
+                    <p>参考右方的图像查看以太坊地址复制到输入框里的样子.</p>
+
+                    <p>注意: 如果你在这一步不小心输入了错误的以太坊地址, 例如不小心删除了一个字符, 那你将收不到订单购买的以太坊. </p>
+
+                    <p>必须提供要购买的以太坊数量.</p>
+
+                    <p>目前, 在该小窗口只能一次性购买不超过等值0.5BTC的以太坊.</p>
+
+                    <p>如果你想要购买最大数量的以太坊, 请直接在BTC数额区域输入数值0.5, 等值的以太坊数量将会直接被计算出来.</p>
+
+                    <p>同时必须提供你的邮箱地址以接受订单受理进度的提示邮件, 在按下绿色的确认键后你将第一封提示邮件.</p>
+
+                    <p>注意: 案例图像并不代表真实的小窗口样式, 请在本页顶部查看该交易小窗口.</p>
+
+                </div>
+
+                <div class="col-md-6">
+                    <img src="/assets/images/cn.widget1.png"/>
+                </div>
+            </div>
+
+
+            <div class="row top50">
+                <div class="col-md-6">
+                    <img src="/assets/images/cn.widget2.png"/>
+                </div>
+
+
+                <div class="col-md-6">
+                    <h4>步骤 6. 发起订单并完成付款</h4>
+
+                    <p>按下绿色按钮后会有一个QR(二维码), 如图所示.</p>
+
+                    <p>如果你能使用带有扫描QR(二维码)功能的钱包, 例如blockchain.info的移动钱包, 扫描QR码后应付的数额会自动设置好.</p>
+
+                    <p>如果无法扫描QR码则你需要从这里手动复制转账地址及转账数额到你的比特币钱包并执行转账.</p>
+
+                    <p>当该转账交易被网络识别后, 系统将给你发送一封确认邮件.</p>
+
+                    <p>达到5-10个确认数后, 交易确认, 真正的货币转换会被执行.</p>
+
+                    <p> 然后以太坊将被转账到你指定的地址里.</p>
+
+                </div>
+
+
+            </div>
+
+            <div class="row top50">
+                <div class="col-md-12">
+                    <h4>恭喜,  你完成了整个转换过程!</h4>
+
+                    <img src="/assets/images/ETH-alt.svg"/>
+
+
+
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+</div>
+
 <!-- /.main -->
 <!-- DOWNLOAD BEGIN --><!--
 <section id="download" class="bg-color-main">
