@@ -22,18 +22,14 @@
 
             <p translate="HEADER_P2" class="top50"></p>
 
+            <p class="top50" ng-if="locale=='english'">Tip: Read our manual: <a ui-sref="app.manual({ locale : 'english' })"><i class="fa fa-book"></i>  Manual - Installation Ethereum wallet - Buy ether with the ether widget.</a></p>
 
-            <p class="top50" ng-if="locale=='english'">Tip: Read our manual: <a ui-sref="app.manual"><i class="fa fa-book"></i>  Manual - Installation Ethereum wallet - Buy ether with the ether widget.</a></p>
-
-            <p class="top50" ng-if="locale=='chinese'">提示: 阅读用户手册: <a ui-sref="app.manual"><i class="fa fa-book"></i> 指南 - 以太坊(Ethereum)钱包安装教程以及使用以太交易小部件购买以太坊。</a></p>
-
-
+            <p class="top50" ng-if="locale=='chinese'">提示: 阅读用户手册: <a ui-sref="app.manual({ locale : 'chinese' })"><i class="fa fa-book"></i> 指南 - 以太坊(Ethereum)钱包安装教程以及使用以太交易小部件购买以太坊。</a></p>
 
           </div>
 
-
           <div class="col-md-6 iframe">
-            <iframe ng-src="{{iframe1}}" border="0" scrolling="no" class="innocoin w500 h550"></iframe>
+            <iframe ng-src="{{iframe1}}" border="0" scrolling="no" class="innocoin w500 h550" ng-if="!test"></iframe>
           </div>
 
 
@@ -75,7 +71,7 @@
         <div class="video-title" translate="VIDEO_HEADER"></div>
         <div class="video-subtitle" translate="VIDEO_SUB_HEADER"></div>
         <div class="video-container">
-          <iframe width="814" height="458" src="https://www.youtube.com/embed/j23HnORQXvs" frameborder="0" allowfullscreen></iframe>
+          <iframe width="814" height="458" src="https://www.youtube.com/embed/j23HnORQXvs" frameborder="0" allowfullscreen ng-if="!test"></iframe>
         </div>
       </div>
     </div>
@@ -87,7 +83,9 @@
 
           <div class="col-md-6">
 
-            <iframe height="340px" width="300px" id="cf_widget_iframe" data-size="large" style="border: medium none;" src="https://www.worldcoinindex.com/widget/renderWidget?size=large&amp;from=ETH&amp;to=btc&amp;clearstyle=true"></iframe>
+            <!--<iframe height="340px" width="300px" id="cf_widget_iframe" data-size="large" style="border: medium none;" src="https://www.worldcoinindex.com/widget/renderWidget?size=large&amp;from=ETH&amp;to=btc&amp;clearstyle=true"></iframe>-->
+
+            <iframe width="90%" height="550" frameborder="0" allowfullscreen="" scrolling="no" allowtransparency="true" src="https://www.tradingview.com/widgetembed/?symbol=KRAKEN%3AETHUSD&amp;interval=D&amp;hidetoptoolbar=1&amp;hidesidetoolbar=1&amp;symboledit=0&amp;saveimage=0&amp;toolbarbg=f1f3f6&amp;studies=&amp;hideideas=1&amp;theme=White&amp;style=1&amp;timezone=Etc%2FUTC&amp;studies_overrides=%7B%7D&amp;overrides=%7B%7D&amp;enabled_features=%5B%5D&amp;disabled_features=%5B%5D&amp;locale=en&amp;utmsource=www.tradingview.com&amp;utmmedium=www.tradingview.com/widget/" id="tradingview_7180d" ng-if="!test"></iframe>
 
           </div>
 
@@ -229,7 +227,7 @@
 <!-- DOWNLOAD END -->
 <footer>
   <div class="wrap">
-    <p>&copy; {{ date | date:'yyyy'}} <strong>Buy Ether</strong>, All Rights Reserved</p>
+    <p>&copy; {{ date | date:'yyyy'}}&nbsp;<strong>Buy Ether</strong>, All Rights Reserved</p>
   </div>
 </footer>
 

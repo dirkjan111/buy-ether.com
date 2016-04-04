@@ -11,7 +11,7 @@
     $logProvider.debugEnabled(true);
 
     $translateProvider.useStaticFilesLoader({
-      prefix: 'app/languages/locale-',
+      prefix: 'assets/languages/locale-',
       suffix: '.json'
     });
 

@@ -30,8 +30,8 @@
       }).state('app.manual', {
           url: '/manual-ethereum-wallet-installation-and-performing-btc-eth-exchange',
           templateUrl: 'app/content/manual.html',
-          controller: 'MainController',
-          controllerAs: 'vm',
+          controller: 'ManualController',
+          controllerAs: 'manual',
           data: {
             english: {
               pageTitle: 'Ethereum wallet installation',
@@ -45,7 +45,7 @@
         });
 
 
-    $urlRouterProvider.otherwise('/en');
+    $urlRouterProvider.otherwise('/english');
   }
 
 })();

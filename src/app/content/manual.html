@@ -3,7 +3,7 @@
         <div class="layer">
             <div class="wrap">
 
-                <a ui-sref="app.root" class="logo"><img src="/assets/images/ETH-alt.svg"/>  buy-ether.com</a>
+                <a ui-sref="app.root({locale : 'english'})" class="logo"><img src="/assets/images/ETH-alt.svg"/>  buy-ether.com</a>
 
 
                 <div class="col-md-12 top50">
@@ -14,11 +14,15 @@
                 <div class="row col-md-12 top50">
 
                     <div class="col-md-6">
-                        <iframe src="https://swap-v1.innocoin.com/#/?language=english&partner_email=partner@innocoin.com&partner_address=3BfKMdyXzG8e8oHCb6YSGVRdASZ3XW6xni&partner_margin=1.25&source=BTC&target=ETH&target_amount=1&show_info=true&theme=random_grey_variations&rounded_corners=false&width=500&height=550&border=false&iframe=true" border="0" scrolling="no" class="innocoin w500 h550"></iframe>
+                        <iframe ng-src="{{iframe1}}" border="0" scrolling="no" class="innocoin w500 h550" ng-if="!test"></iframe>
                     </div>
 
                     <div class="col-md-6">
-                        <p> <i class="fa fa-arrow-left"></i>This is the Ether buy widget. If you already have bitcoin then it is possible to exchange bitcoin into ether with this widget. We will describe here how this works.</p>
+                        <p>
+                            <i class="fa fa-arrow-left hidden-sm"></i>
+                            <i class="fa fa-arrow-down visible-sm"></i>
+
+                            This is the Ether buy widget. If you already have bitcoin then it is possible to exchange bitcoin into ether with this widget. We will describe here how this works.</p>
 
                         <ol>
                         <li>First you should download and install the ethereum wallet and then make sure it's up-to-date.</li>
@@ -27,7 +31,10 @@
 
                         <li>Now go to the widget on buy-ether and place the order for the amount of Ether that you desire.</li>
                         </ol>
-                        <p>Read more under here <i class="fa fa-arrow-down"></i></p>
+                        <p>Read more under here <br/><i class="fa fa-arrow-down"></i>
+
+
+                        </p>
 
                     </div>
 
@@ -146,9 +153,9 @@
 
                     <p>You also need to provide the number of ETH you want to order.</p>
 
-                    <p>At the moment there is a max of 0.5 BTC worth of Ether that can be bought through the widget.</p>
+                    <p>At the moment there is a max of 1 BTC worth of Ether that can be bought through the widget.</p>
 
-                    <p>If you want to buy the maximum amount of Ether, you can just fill in 0.5 BTC in the BTC input field. The right number of ETH is automatically calculated.</p>
+                    <p>If you want to buy the maximum amount of Ether, you can just fill in 1 BTC in the BTC input field. The right number of ETH is automatically calculated.</p>
 
                     <p>You also need to provide your e-mail address, there you will receive updates of the order process. You will immediately receive the first update after you pressed the green button.</p>
 
@@ -215,7 +222,7 @@
         <div class="layer">
             <div class="wrap">
 
-                <a ui-sref="app.root" class="logo"><img src="/assets/images/ETH-alt.svg"/>  buy-ether.com</a>
+                <a ui-sref="app.root({ locale : 'chinese'})" class="logo"><img src="/assets/images/ETH-alt.svg"/>  buy-ether.com</a>
 
 
                 <div class="col-md-12 top50">
@@ -226,11 +233,15 @@
                 <div class="row col-md-12 top50">
 
                     <div class="col-md-6">
-                        <iframe src="https://swap-v1.innocoin.com/#/?language=chinese&partner_email=partner@innocoin.com&partner_address=3BfKMdyXzG8e8oHCb6YSGVRdASZ3XW6xni&partner_margin=1.25&source=BTC&target=ETH&target_amount=1&show_info=true&theme=random_grey_variations&rounded_corners=false&width=500&height=550&border=false&iframe=true" border="0" scrolling="no" class="innocoin w500 h550"></iframe>
+                        <iframe ng-src="{{iframe2}}" border="0" scrolling="no" class="innocoin w500 h550" ng-if="!test"></iframe>
                     </div>
 
                     <div class="col-md-6">
-                        <p> <i class="fa fa-arrow-left"></i>左边即是以太坊的购买小部件, 如果你已经拥有比特币, 那现在就可以使用这个小窗口购买以太坊。我们将在此教程解释如何使用这个小部件。</p>
+                        <p>
+                            <i class="fa fa-arrow-left hidden-sm"></i>
+                            <i class="fa fa-arrow-down visible-sm"></i>
+
+                            左边即是以太坊的购买小部件, 如果你已经拥有比特币, 那现在就可以使用这个小窗口购买以太坊。我们将在此教程解释如何使用这个小部件。</p>
 
                         <ol>
                             <li>首先下载并按照以太坊钱包，并确保升级到最新版本。</li>
@@ -239,7 +250,7 @@
 
                             <li>现在来到购买小窗口, 发起一个新订单并如输入想购买的数量。</li>
                         </ol>
-                        <p>请继续阅读下面信息
+                        <p>请继续阅读下面信息<br/>
                             <i class="fa fa-arrow-down"></i></p>
 
                     </div>
@@ -362,9 +373,9 @@
 
                     <p>必须提供要购买的以太坊数量.</p>
 
-                    <p>目前, 在该小窗口只能一次性购买不超过等值0.5BTC的以太坊.</p>
+                    <p>目前, 在该小窗口只能一次性购买不超过等值[1BTC]的以太坊.</p>
 
-                    <p>如果你想要购买最大数量的以太坊, 请直接在BTC数额区域输入数值0.5, 等值的以太坊数量将会直接被计算出来.</p>
+                    <p>如果你想要购买最大数量的以太坊, 请直接在BTC数额区域输入数值[1], 等值的以太坊数量将会直接被计算出来.</p>
 
                     <p>同时必须提供你的邮箱地址以接受订单受理进度的提示邮件, 在按下绿色的确认键后你将第一封提示邮件.</p>
 
@@ -437,17 +448,6 @@
 <!-- DOWNLOAD END -->
 <footer>
     <div class="wrap">
-        <p>&copy; {{vm.date | date:'yyyy'}} <a href="https://www.buy-ether.com">Buy Ether</a>, All Rights Reserved</p>
+        <p>&copy; {{ date | date:'yyyy'}}&nbsp;<a href="https://www.buy-ether.com">Buy Ether</a>, All Rights Reserved</p>
     </div>
 </footer>
-
-<script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-    ga('create', 'UA-39992989-6', 'auto');
-    ga('send', 'pageview');
-
-</script>
