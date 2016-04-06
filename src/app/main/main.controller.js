@@ -13,7 +13,7 @@
       $scope.updateIframes = function(lang) {
           var language = lang || $translate.use();
 
-          $scope.iframe1 =  $sce.trustAsResourceUrl($scope.baseUrl + '?language=' + language + '&partner_email=partner@innocoin.com&partner_address=3BfKMdyXzG8e8oHCb6YSGVRdASZ3XW6xni&partner_margin=1.25&source=BTC&target=ETH&target_amount=1&show_info=true&theme=concrete_wall&rounded_corners=true&border=false&iframe=true');
+          $scope.iframe1 =  $sce.trustAsResourceUrl($scope.baseUrl + '?language=' + language + '&partner_email=partner@innocoin.com&partner_address=3BfKMdyXzG8e8oHCb6YSGVRdASZ3XW6xni&partner_margin=1.25&source=BTC&target=ETH&target_amount=2.5&show_info=true&theme=brushed_alu&rounded_corners=true&border=false&iframe=true');
       };
 
       $scope.changeLang = function(lang) {

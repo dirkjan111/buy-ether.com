@@ -39,6 +39,10 @@
 */
 
     $rootScope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
+      if($stateParams.locale && ['english','nederlands','chinese'].indexOf($stateParams.locale) !== -1){
+        $rootScope.locale = $stateParams.locale;
+        $translate.use($stateParams.locale);
+      }
 
       $rootScope.canonical = $location.absUrl() === abs_url + '/english' ? abs_url : $location.absUrl();
 
