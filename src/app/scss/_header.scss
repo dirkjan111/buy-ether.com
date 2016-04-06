@@ -9,7 +9,7 @@ header {
     .layer {
         height:100%;
         padding:104px 0;
-        background-color: rgba(15, 70, 241, 0.65);
+        background-color: $bgcolor;
     }
     #cf_widget_iframe {
         position: absolute;

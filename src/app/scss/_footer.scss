@@ -1,6 +1,5 @@
 /* footer -------------------------- */
 footer {
-    background-color: rgba(15, 70, 241, 0.65);
     color: $white;
     font-size: 16px;
     line-height: 28px;
@@ -9,6 +8,13 @@ footer {
     min-height:10em;
     line-height:10em;
     @include sizing;
+
+    background: url('/assets/patterns/vichy.png') repeat;
+
+    .layer {
+        height:100%;
+        background-color: $bgcolor;
+    }
 
 
     p,strong {
