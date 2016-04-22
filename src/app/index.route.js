@@ -19,8 +19,8 @@
         controllerAs: 'main',
         data: {
           english : {
-            pageTitle : 'Buy Ether (Ethereum)',
-            pageDescription : 'Ether (ETH) is a tradeable asset, you can buy it here on buy-ether.com'
+            pageTitle : 'Buy Ethereum (Buy Ether /ETH)',
+            pageDescription : 'You can buy ethereum (buy ethers) on buy-ether.com. Ether (ETH) is a tradeable private asset.'
           },
           chinese : {
             pageTitle : '购买 Ether (以太坊 Ethereum)',
