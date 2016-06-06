@@ -19,7 +19,7 @@
         controllerAs: 'main',
         data: {
           english : {
-            pageTitle : 'Buy Ethereum (Buy Ether /ETH)',
+            pageTitle : 'Buy Ethereum (Buy Ether /ETH) with Bitcoin',
             pageDescription : 'You can buy ethereum (buy ethers) on buy-ether.com. Ether (ETH) is a tradeable private asset.'
           },
           chinese : {

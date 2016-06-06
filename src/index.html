@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title ng-bind="$state.current.data[locale].pageTitle"></title>
-    <meta name="description" translate translate-attr-content="DESCRIPTION">
+    <meta name="description" ng-attr-content="{{$state.current.data[locale].pageDescription}}" />
 
     <meta name="keywords" translate translate-attr-content="KEYWORDS">
 
