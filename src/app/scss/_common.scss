@@ -2,22 +2,21 @@
 %sprite {
     background: url(../images/sprite.png) 0 0 no-repeat;
 }
-html {
-    height: 100%;
-    background: $white;
+
+html,body {
+    height:100%;
+    padding:0;
 }
+
 body {
-    height: 100%;
     font: #{$fontSize}/#{$lineHeight} $fontFamily;
     color: $text;
     -webkit-font-smoothing: antialiased;
     -webkit-backface-visibility: hidden;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
+    margin-top:0!important;
+
 }
 .main {
-    min-height: 100%;
-    overflow: hidden;
     @include sizing;
 }
 .wrap {
@@ -148,16 +147,24 @@ gulp.logo {
 
 
 div.iframe {
+    text-align: right;
 
     @media (min-width: 0) and (max-width: 300px) {
         padding:2px!important;
+    }
+
+
+    @media (min-width: 0) and (max-width: 1020px) {
+        margin-top:30px;
+        text-align: center!important;
+
     }
 
 }
 
 
 iframe.innocoin {
-    border:6px solid rgba(255,255,255,.5);
+    border:10px solid rgba(255,255,255,.5);
 
 
     @media (min-width: 301px) and (max-width: 400px) {

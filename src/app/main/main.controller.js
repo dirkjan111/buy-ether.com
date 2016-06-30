@@ -5,7 +5,7 @@
     .module('buyEther4Com')
     .controller('MainController', MainController);
 
-  function MainController($scope, $translate, $state, $window, $rootScope, $sce) {
+  function MainController($scope, $translate, $state, $rootScope, $sce) {
       var vm = this;
 
       $scope.baseUrl = 'https://swap.innocoin.com/#/';

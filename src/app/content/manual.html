@@ -1,46 +1,70 @@
 <div class="main" ng-if="locale=='english'">
     <header>
         <div class="layer">
+
+            <div class="logo">
+                <div class="wrap">
+                    <a ui-sref="app.root({locale : 'english'})"><img src="/assets/images/logo.png"/></a>
+                </div>
+                <hr/>
+            </div>
+
             <div class="wrap">
 
-                <a ui-sref="app.root({locale : 'english'})" class="logo"><img src="/assets/images/ETH-alt.svg"/>  buy-ether.com</a>
-
-
-                <div class="col-md-12 top50">
-                    <h1>Manual - Installation Ethereum wallet. Buy ether with the ether widget.</h1>
-                    <p>This is a tutorial in which we explain how you can install the official Ethereum Mist wallet and how you can purchase Ether with Bitcoin.</p>
+                <div class="language-switch">
+                    <a class="flag en" ng-click="changeLang('english')"></a>
+                    <a class="flag cn" ng-click="changeLang('chinese')"></a>
                 </div>
 
-                <div class="row col-md-12 top50">
+                <div class="row padding-104-50">
 
-                    <div class="col-md-6">
-                        <iframe ng-src="{{iframe1}}" border="0" scrolling="no" class="innocoin w500 h470" ng-if="!test"></iframe>
+                    <div class="col-md-12">
+                        <h1>Manual - Installation Ethereum wallet. Buy ether with the ether widget.</h1>
+                        <br/>
+
+                        <p>This is a tutorial in which we explain how you can install the official Ethereum Mist wallet
+                            and how you can purchase Ether with Bitcoin.</p>
                     </div>
 
-                    <div class="col-md-6">
-                        <p>
-                            <i class="fa fa-arrow-left hidden-sm"></i>
-                            <i class="fa fa-arrow-down visible-sm"></i>
+                    <div class="row col-md-12 top50">
 
-                            This is the Ether buy widget. If you already have bitcoin then it is possible to exchange bitcoin into ether with this widget. We will describe here how this works.</p>
+                        <div class="col-md-6">
+                            <iframe ng-src="{{iframe1}}" border="0" scrolling="no" class="innocoin w500 h470"
+                                    ng-if="!test"></iframe>
+                        </div>
 
-                        <ol>
-                        <li>First you should download and install the ethereum wallet and then make sure it's up-to-date.</li>
+                        <div class="col-md-6">
+                            <p>
+                                <i class="fa fa-arrow-left hidden-sm"></i>
+                                <i class="fa fa-arrow-down visible-sm"></i>
 
-                        <li>Then start up the bitcoin wallet and sync it.</li>
+                                This is the Ether buy widget. If you already have bitcoin then it is possible to
+                                exchange bitcoin into ether with this widget. We will describe here how this works.</p>
+<br/>
+                            <ol>
+                                <li>First you should download and install the ethereum wallet and then make sure it's
+                                    up-to-date.
+                                </li>
 
-                        <li>Now go to the widget on buy-ether and place the order for the amount of Ether that you desire.</li>
-                        </ol>
-                        <p>Read more under here <br/><i class="fa fa-arrow-down"></i>
+                                <li>Then start up the bitcoin wallet and sync it.</li>
+
+                                <li>Now go to the widget on buy-ether and place the order for the amount of Ether that
+                                    you desire.
+                                </li>
+                            </ol>
+                            <br/>
+                            <p>Read more under here <br/><i class="fa fa-arrow-down"></i>
 
 
-                        </p>
+                            </p>
+
+                        </div>
+
 
                     </div>
-
-
                 </div>
             </div>
+
         </div>
     </header>
 
@@ -50,13 +74,18 @@
 
             <h2>Manual Ethereum wallet/ Buy Ether</h2>
 
-            <p>So you have already bought bitcoin but now you want Ether, the underlying coin (or token) of the Ethereum network, but you don't know how ? </p>
+            <p>So you have already bought bitcoin but now you want Ether, the underlying coin (or token) of the Ethereum
+                network, but you don't know how ? </p>
 
             <h4 class="top50">You are at the right address, we are going to explain it to you step by step.</h4>
 
-            <p>This manual assumes you already have bitcoin. If this is not the case; it's not yet possible to buy ether with creditcard or a method other than bitcoin yet, it is in the planning though.</p>
+            <p>This manual assumes you already have bitcoin. If this is not the case; it's not yet possible to buy ether
+                with creditcard or a method other than bitcoin yet, it is in the planning though.</p>
 
-            <p>The process of exchanging bitcoin into ether is fairly simple. In just a few steps it can be accomplished. What you need first is the official Ethereum wallet and a bitcoin containing some coins. Both wallets need to be completely synced. Being synced means it should be up-to-date and it has downloaded the blockchain..</p>
+            <p>The process of exchanging bitcoin into ether is fairly simple. In just a few steps it can be
+                accomplished. What you need first is the official Ethereum wallet and a bitcoin containing some coins.
+                Both wallets need to be completely synced. Being synced means it should be up-to-date and it has
+                downloaded the blockchain..</p>
 
 
             <div class="row top50">
@@ -69,29 +98,42 @@
 
                             <p>The first step is to download the Mist wallet.</p>
 
-                            <p>You can do this in several ways. The easiest way is to go to <a href="https://ethereum.org/">ethereum.org</a>, scroll a bit down and press the download button, the right version is automatically presented to you (e.g. for windows, macos). First you need to agree to the disclaimer (it is warning you that ethereum doesn't accept any responsibility).</p>
+                            <p>You can do this in several ways. The easiest way is to go to <a
+                                    href="https://ethereum.org/">ethereum.org</a>, scroll a bit down and press the
+                                download button, the right version is automatically presented to you (e.g. for windows,
+                                macos). First you need to agree to the disclaimer (it is warning you that ethereum
+                                doesn't accept any responsibility).</p>
 
                         </div>
 
                         <div class="col-md-4 text-right">
 
-                            <a href="https://ethereum.org/"><img src="/assets/images/mist.png" style="width:250px;"/></a>
+                            <a href="https://ethereum.org/"><img src="/assets/images/mist.png"
+                                                                 style="width:250px;"/></a>
                         </div>
                     </div>
 
 
-                    <p>You can also look in <a href="https://github.com/ethereum/mist/releases">github</a> to see if there are new releases.</p>
+                    <p>You can also look in <a href="https://github.com/ethereum/mist/releases">github</a> to see if
+                        there are new releases.</p>
 
-                    <p>After installation it is necessary to sync the wallet by downloading the blockchain. Don't be afraid, the happens pretty much automatically. The blockchain is a ledger of all transactions that ever occurred on the Ethereum network. It takes some time before it's up-to-date.</p>
+                    <p>After installation it is necessary to sync the wallet by downloading the blockchain. Don't be
+                        afraid, the happens pretty much automatically. The blockchain is a ledger of all transactions
+                        that ever occurred on the Ethereum network. It takes some time before it's up-to-date.</p>
 
                     <p>After installation your Ethereum wallet looks like this:</p>
 
                     <img src="/assets/images/ethereum-wallet.jpg"/>
 
                     <p class="top50">
-                        There is a difference between accounts and wallets. An account you already have on opening the wallet for the first time (it's called Etherbase), on this account you can send and receive Ether, the only downside is that you cannot see the transactions.</p>
+                        There is a difference between accounts and wallets. An account you already have on opening the
+                        wallet for the first time (it's called Etherbase), on this account you can send and receive
+                        Ether, the only downside is that you cannot see the transactions.</p>
 
-                    <p>A wallet functions the same as an account but does contain transactions. Before you can create a wallet (in which you can see transactions), you need some Ether in your Etherbase account to pay for the wallet. This is only a very small amount buyt by charging the user, spam and abuse is prevented.</p>
+                    <p>A wallet functions the same as an account but does contain transactions. Before you can create a
+                        wallet (in which you can see transactions), you need some Ether in your Etherbase account to pay
+                        for the wallet. This is only a very small amount buyt by charging the user, spam and abuse is
+                        prevented.</p>
 
                 </div>
 
@@ -106,7 +148,8 @@
 
                     <p>Go to Accounts -> Backup -> Accounts.</p>
 
-                    <p>Save the backup in a safe place, preferably on an external harddisk, or a location that is regularly backupped.</p>
+                    <p>Save the backup in a safe place, preferably on an external harddisk, or a location that is
+                        regularly backupped.</p>
                 </div>
 
             </div>
@@ -116,10 +159,15 @@
                 <div class="col-md-12">
                     <h4>Step 3. Open your bitcoin wallet and make sure it's up-to-date</h4>
 
-                    <p>If you are using Bitcoin-QT (the standard wallet for bitcoin) you can check in the bottom right if he is fully synced/ up-to-date. If you didn't have the wallet open for time it can take a while before it's synced. If you are using electrum or for example a webwallet it's already up-to-date en it will be fast or instant.
-                        </p>
+                    <p>If you are using Bitcoin-QT (the standard wallet for bitcoin) you can check in the bottom right
+                        if he is fully synced/ up-to-date. If you didn't have the wallet open for time it can take a
+                        while before it's synced. If you are using electrum or for example a webwallet it's already
+                        up-to-date en it will be fast or instant.
+                    </p>
 
-                    <p>A mobile wallet that is good and easy to work with is the one from <a href="http://www.blockchain.info">blockchain.info</a>, the advantage of a mobile wallet is that it is very easy to scan a qr code.</p>
+                    <p>A mobile wallet that is good and easy to work with is the one from <a
+                            href="http://www.blockchain.info">blockchain.info</a>, the advantage of a mobile wallet is
+                        that it is very easy to scan a qr code.</p>
 
                     <p>Once a wallet is up-to-date you are ready for the next step.</p>
                 </div>
@@ -149,17 +197,22 @@
 
                     <p>In the picture you can see how the widget looks with your Ether address pasted into it.</p>
 
-                    <p>ATTENTION: if you make a mistake here and don't provide the correct Ethereum address, or for example, remove 1 character by accident, you will NOT receive your order. </p>
+                    <p>ATTENTION: if you make a mistake here and don't provide the correct Ethereum address, or for
+                        example, remove 1 character by accident, you will NOT receive your order. </p>
 
                     <p>You also need to provide the number of ETH you want to order.</p>
 
-                    <p>At the moment there is a max of {{max}} BTC worth of Ether that can be bought through the widget.</p>
+                    <p>At the moment there is a max of {{max}} BTC worth of Ether that can be bought through the
+                        widget.</p>
 
-                    <p>If you want to buy the maximum amount of Ether, you can just fill in {{max}} BTC in the BTC input field. The right number of ETH is automatically calculated.</p>
+                    <p>If you want to buy the maximum amount of Ether, you can just fill in {{max}} BTC in the BTC input
+                        field. The right number of ETH is automatically calculated.</p>
 
-                    <p>You also need to provide your e-mail address, there you will receive updates of the order process. You will immediately receive the first update after you pressed the green button.</p>
+                    <p>You also need to provide your e-mail address, there you will receive updates of the order
+                        process. You will immediately receive the first update after you pressed the green button.</p>
 
-                    <p>ATTENTION: the pictures do not contain the real widget. The real widget is in the top of the page.</p>
+                    <p>ATTENTION: the pictures do not contain the real widget. The real widget is in the top of the
+                        page.</p>
 
                 </div>
 
@@ -179,13 +232,16 @@
 
                     <p>If you press on the green button you will see the QR code, like in the picure.</p>
 
-                    <p>If you have the possibility to scan the QR code with for example the APP of blockchain.info then you can use the QR code, the amount is also prefilled in that case.</p>
+                    <p>If you have the possibility to scan the QR code with for example the APP of blockchain.info then
+                        you can use the QR code, the amount is also prefilled in that case.</p>
 
-                    <p>Otherwise you can copy paste the address and the amount, to your bitcoin wallet of choice and do the transfer from there.</p>
+                    <p>Otherwise you can copy paste the address and the amount, to your bitcoin wallet of choice and do
+                        the transfer from there.</p>
 
                     <p>After the transaction is recognized on the bitcoin network, a confirmation mail is sent out.</p>
 
-                    <p>In between 5 to 10 confirmaties the transaction is see as definitive and the actual exchange is performed.</p>
+                    <p>In between 5 to 10 confirmaties the transaction is see as definitive and the actual exchange is
+                        performed.</p>
 
                     <p>Then the Ether will be transferred automatically to the ether address you specified.</p>
 
@@ -201,16 +257,13 @@
                     <img src="/assets/images/ETH-alt.svg"/>
 
 
-
                 </div>
 
 
             </div>
 
 
-
         </div>
-
 
 
     </div>
@@ -220,42 +273,57 @@
 <div class="main" ng-if="locale=='chinese'">
     <header>
         <div class="layer">
+
+            <div class="logo">
+                <div class="wrap">
+                    <a ui-sref="app.root({locale : 'chinese'})"><img src="/assets/images/logo.png"/></a>
+                </div>
+                <hr/>
+            </div>
+
             <div class="wrap">
 
-                <a ui-sref="app.root({ locale : 'chinese'})" class="logo"><img src="/assets/images/ETH-alt.svg"/>  buy-ether.com</a>
-
-
-                <div class="col-md-12 top50">
-                    <h1>指南 - 以太坊(Ethereum)钱包安装教程以及使用以太交易小部件购买以太坊.</h1>
-                    <p>这个教程展示以太坊(Ethereum)官方钱包Mist的安装步骤以及如何使用比特币购买以太坊。</p>
+                <div class="language-switch">
+                    <a class="flag en" ng-click="changeLang('english')"></a>
+                    <a class="flag cn" ng-click="changeLang('chinese')"></a>
                 </div>
 
-                <div class="row col-md-12 top50">
 
-                    <div class="col-md-6">
-                        <iframe ng-src="{{iframe2}}" border="0" scrolling="no" class="innocoin w500 h470" ng-if="!test"></iframe>
+                <div class="row padding-104-50">
+
+                    <div class="col-md-12">
+                        <h1>指南 - 以太坊(Ethereum)钱包安装教程以及使用以太交易小部件购买以太坊.</h1>
+                        <br/>
+                        <p>这个教程展示以太坊(Ethereum)官方钱包Mist的安装步骤以及如何使用比特币购买以太坊。</p>
                     </div>
 
-                    <div class="col-md-6">
-                        <p>
-                            <i class="fa fa-arrow-left hidden-sm"></i>
-                            <i class="fa fa-arrow-down visible-sm"></i>
+                    <div class="row col-md-12 top50">
 
-                            左边即是以太坊的购买小部件, 如果你已经拥有比特币, 那现在就可以使用这个小窗口购买以太坊。我们将在此教程解释如何使用这个小部件。</p>
+                        <div class="col-md-6">
+                            <iframe ng-src="{{iframe1}}" border="0" scrolling="no" class="innocoin w500 h470"
+                                    ng-if="!test"></iframe>
+                        </div>
 
-                        <ol>
-                            <li>首先下载并按照以太坊钱包，并确保升级到最新版本。</li>
+                        <div class="col-md-6">
+                            <p>
+                                <i class="fa fa-arrow-left hidden-sm"></i>
+                                <i class="fa fa-arrow-down visible-sm"></i>
 
-                            <li> 然后启动比特币钱包并更新区块数据。</li>
+                                左边即是以太坊的购买小部件, 如果你已经拥有比特币, 那现在就可以使用这个小窗口购买以太坊。我们将在此教程解释如何使用这个小部件。</p>
 
-                            <li>现在来到购买小窗口, 发起一个新订单并如输入想购买的数量。</li>
-                        </ol>
-                        <p>请继续阅读下面信息<br/>
-                            <i class="fa fa-arrow-down"></i></p>
+                            <ol>
+                                <li>首先下载并按照以太坊钱包，并确保升级到最新版本。</li>
+
+                                <li> 然后启动比特币钱包并更新区块数据。</li>
+
+                                <li>现在来到购买小窗口, 发起一个新订单并如输入想购买的数量。</li>
+                            </ol>
+                            <p>请继续阅读下面信息<br/>
+                                <i class="fa fa-arrow-down"></i></p>
+
+                        </div>
 
                     </div>
-
-
                 </div>
             </div>
         </div>
@@ -273,7 +341,8 @@
 
             <p>首先,该教程默认你已拥有若干比特币。如果你暂时没有比特币，那在目前的情况下，还无法做到使用信用卡或其他方法购买以太坊，我们慢慢解释。</p>
 
-            <p>本系统将比特币转换成以太坊的过程其实十分简单, 几个步骤便可完成整个过程.  你所需的首先是以太坊官方钱包还有一个比特币客户端, 当然得有一些比特币. 两个钱包都必须完成与网络的同步. 与网络同步意味着客户端升级到最新版且下载了完整的最新的区块链.</p>
+            <p>本系统将比特币转换成以太坊的过程其实十分简单, 几个步骤便可完成整个过程. 你所需的首先是以太坊官方钱包还有一个比特币客户端, 当然得有一些比特币. 两个钱包都必须完成与网络的同步.
+                与网络同步意味着客户端升级到最新版且下载了完整的最新的区块链.</p>
 
 
             <div class="row top50">
@@ -286,13 +355,15 @@
 
                             <p>第一步就是下载MIST钱包</p>
 
-                            <p>有几种方法供选择, 最便利的途径是直接访问 <a href="https://ethereum.org/">ethereum.org</a>, 滑动页面, 找到下载按钮, 页面会自动为你适配匹配的版本(例如windows, MACOS). 然后同意网页的免责声明(如果弹出警告称以太坊不承担任何责任的话). </p>
+                            <p>有几种方法供选择, 最便利的途径是直接访问 <a href="https://ethereum.org/">ethereum.org</a>, 滑动页面, 找到下载按钮,
+                                页面会自动为你适配匹配的版本(例如windows, MACOS). 然后同意网页的免责声明(如果弹出警告称以太坊不承担任何责任的话). </p>
 
                         </div>
 
                         <div class="col-md-4 text-right">
 
-                            <a href="https://ethereum.org/"><img src="/assets/images/mist.png" style="width:250px;"/></a>
+                            <a href="https://ethereum.org/"><img src="/assets/images/mist.png"
+                                                                 style="width:250px;"/></a>
                         </div>
                     </div>
 
@@ -306,10 +377,11 @@
                     <img src="/assets/images/ethereum-wallet.jpg"/>
 
                     <p class="top50">
-                        “账户”与”钱包”有一些区别,  在第一次打开钱包的时候, 你就自动得到了一个账户(其被称为Etherbase), 在该账户你可以发送与接收以太坊,  唯一不足的就是你无法看到交易详情.
+                        “账户”与”钱包”有一些区别, 在第一次打开钱包的时候, 你就自动得到了一个账户(其被称为Etherbase), 在该账户你可以发送与接收以太坊, 唯一不足的就是你无法看到交易详情.
                     </p>
 
-                    <p>钱包的功能与账户一致，且可查看交易. 在你创建一个钱包(在钱包里你可以查看交易)之前, 出于防止垃圾账户的产生以及他人滥用钱包的情况出现, 你必须往你的以太坊账户发送一笔小额的币以激活钱包. </p>
+                    <p>钱包的功能与账户一致，且可查看交易. 在你创建一个钱包(在钱包里你可以查看交易)之前, 出于防止垃圾账户的产生以及他人滥用钱包的情况出现,
+                        你必须往你的以太坊账户发送一笔小额的币以激活钱包. </p>
 
                 </div>
 
@@ -332,14 +404,15 @@
             <div class="row top50">
 
 
-
                 <div class="col-md-12">
-                    <h4>步骤 3.  打开比特币钱包并更新区块数据</h4>
+                    <h4>步骤 3. 打开比特币钱包并更新区块数据</h4>
 
-                    <p>如果你使用的是比特币QT客户端(比特币标准钱包), 你能在客户端界面的右下角查看客户端是否已经同步完数据. 如果你长时间没打开客户端, 那可能就要花点时间来同步数据. 如果你使用的是以太坊或者在线第三方钱包, 那就无需同步数据直接可以使用了.
+                    <p>如果你使用的是比特币QT客户端(比特币标准钱包), 你能在客户端界面的右下角查看客户端是否已经同步完数据. 如果你长时间没打开客户端, 那可能就要花点时间来同步数据.
+                        如果你使用的是以太坊或者在线第三方钱包, 那就无需同步数据直接可以使用了.
                     </p>
 
-                    <p>手机版本的钱包易用, 例如来自 <a href="http://www.blockchain.info">blockchain.info</a> 的移动版本钱包就是目前先进的移动钱包之一, 同时扫描QR(二维码)也很简单.</p>
+                    <p>手机版本的钱包易用, 例如来自 <a href="http://www.blockchain.info">blockchain.info</a> 的移动版本钱包就是目前先进的移动钱包之一,
+                        同时扫描QR(二维码)也很简单.</p>
 
                     <p>一旦钱包完成同步数据工作, 你便可以进入到下一步.</p>
                 </div>
@@ -417,10 +490,9 @@
 
             <div class="row top50">
                 <div class="col-md-12">
-                    <h4>恭喜,  你完成了整个转换过程!</h4>
+                    <h4>恭喜, 你完成了整个转换过程!</h4>
 
                     <img src="/assets/images/ETH-alt.svg"/>
-
 
 
                 </div>
@@ -429,9 +501,7 @@
             </div>
 
 
-
         </div>
-
 
 
     </div>
@@ -448,8 +518,9 @@
 <!-- DOWNLOAD END -->
 <footer>
     <div class="layer">
-    <div class="wrap">
-        <p>&copy; {{ date | date:'yyyy'}}&nbsp;<a href="https://www.buy-ether.com">Buy Ether</a>, All Rights Reserved</p>
-    </div>
+        <div class="wrap">
+            <p>&copy; {{ date | date:'yyyy'}}&nbsp;<a href="https://www.buy-ether.com">Buy Ether</a>, All Rights
+                Reserved</p>
         </div>
+    </div>
 </footer>

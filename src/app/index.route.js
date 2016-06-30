@@ -19,8 +19,8 @@
         controllerAs: 'main',
         data: {
           english : {
-            pageTitle : 'Buy Ethereum (Buy Ether /ETH) with Bitcoin',
-            pageDescription : 'You can buy ethereum (buy ethers) on buy-ether.com. Ether (ETH) is a tradeable private asset.'
+            pageTitle : 'Buy Ethereum (Buy Ether /ETH)',
+            pageDescription : 'You can buy ethereum with bitcoin (buy ethers) on buy-ether.com. Ether (ETH) is a tradeable private asset.'
           },
           chinese : {
             pageTitle : '购买 Ether (以太坊 Ethereum)',
@@ -42,6 +42,9 @@
               pageDescription: '这个教程展示以太坊(Ethereum)官方钱包Mist的安装步骤以及如何使用比特币购买以太坊。'
             }
           }
+        }).state('app.chart', {
+          url: '/chart/btc-eth',
+          templateUrl: 'app/chart/chart.html'
         });
 
 

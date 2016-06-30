@@ -17,38 +17,38 @@
     $rootScope.date = new Date();
 
 
+
+
     var abs_url = 'https://www.buy-ether.com';
 
     $rootScope.$on('$stateChangeStart', function(event, toState, toParams) {
       $translate.use(toParams.locale);
 
+
     });
 
-
-    /*if(!$rootScope.locale || $window.location.pathname === '/en') {
-      $rootScope.locale = 'english';
-      $translate.use($rootScope.locale);
-      $window.location = '/';
-    }
-
-    if(!$rootScope.locale && $window.location.pathname === '/cn') {
-      $rootScope.locale = 'chinese';
-      $translate.use($rootScope.locale);
-      $window.location = '/chinese';
-    }
-*/
-
-    $rootScope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
+   $rootScope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
       if($stateParams.locale && ['english','nederlands','chinese'].indexOf($stateParams.locale) !== -1){
         $rootScope.locale = $stateParams.locale;
         $translate.use($stateParams.locale);
       }
 
-      $rootScope.canonical = $location.absUrl() === abs_url + '/english' ? abs_url : $location.absUrl();
+       var browserlang = $window.navigator.language.toLowerCase() || $window.navigator.userLanguage.toLowerCase();
 
-      document.body.scrollTop = document.documentElement.scrollTop = 0;
+       if (['zh','zh-cn','zh-sg','zh-tw','zh-hk'].indexOf(browserlang) !== -1 && ['english','nederlands','chinese'].indexOf($stateParams.locale) === -1) {
+           $rootScope.locale = 'chinese';
+           $translate.use($rootScope.locale);
+           $window.location = '/chinese';
+       }
+
+       $rootScope.canonical = $location.absUrl() === abs_url + '/english' ? abs_url : $location.absUrl();
+       $rootScope.$statename = $state.$current.name.replace('.','-');
+
+       document.body.scrollTop = document.documentElement.scrollTop = 0;
 
     });
+
+
 
 
   }

@@ -28,11 +28,10 @@ $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/"
 }
 
 
-
 @import "scss/variables";
 @import "scss/mixins";
-@import "scss/reset";
 @import "scss/common";
+@import "scss/reset";
 @import "scss/header";
 @import "scss/footer";
 @import "scss/home";
@@ -40,7 +39,13 @@ $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/"
 @import "scss/sidebar";
 @import "scss/media";
 
+
+.top10 {margin-top:10px;}
+.top20 {margin-top:20px;}
+.top30 {margin-top:30px;}
+.top40 {margin-top:40px;}
 .top50 {margin-top:50px;}
+
 
 iframe.shadow {
   box-shadow: 3px 3px 3px #666;
