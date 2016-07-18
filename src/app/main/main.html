@@ -1,272 +1,348 @@
 <div class="main">
-  <header>
+    <header>
 
-    <div class="layer">
+        <div class="layer">
 
-      <div class="logo">
-        <div class="wrap">
-          <a ui-sref="home"><img src="/assets/images/logo.png"/></a>
-        </div>
-          <hr/>
-      </div>
-
-      <div class="wrap">
-
-        <div class="language-switch">
-          <a class="flag en" ng-click="changeLang('english')"></a>
-          <a class="flag cn" ng-click="changeLang('chinese')"></a>
-        </div>
-
-        <div class="row padding-104">
-
-          <div class="col-md-6">
-
-            <h1 translate="HEADER_H1"></h1>
-
-            <p translate="HEADER_P2" class="top30"></p>
-
-
-            <p class="top30" ng-if="locale=='chinese'">提示: 阅读用户手册: <a ui-sref="app.manual({ locale : 'chinese' })"><i class="fa fa-book"></i> 指南 - 以太坊(Ethereum)钱包安装教程以及使用以太交易小部件购买以太坊。</a></p>
-
-            <p class="top30" ng-if="locale=='english'">Tip: Read our manual: <a ui-sref="app.manual({ locale : 'english' })"><i class="fa fa-book"></i>  Manual - Installation Ethereum wallet - Buy ether with the ether widget.</a></p>
-
-
-           <!-- <p translate="HEADER_P1" class="top30"></p>-->
-
-
-          </div>
-
-          <div class="col-md-6 iframe">
-
-            <div>
-
-
-              <iframe ng-src="{{iframe1}}" border="0" scrolling="no" class="innocoin w500 h470" ng-if="!test"></iframe>
-
-
-             <!-- <figure class="stars">
-                <figcaption>Review stars 5/5</figcaption>
-              </figure>-->
+            <div class="logo">
+                <div class="wrap">
+                    <a ui-sref="home"><img src="/assets/images/logo.png"/></a>
+                </div>
+                <hr/>
             </div>
 
+            <div class="wrap">
 
-          </div>
+                <div class="language-switch">
+                    <a class="flag en" ng-click="changeLang('english')"></a>
+                    <a class="flag cn" ng-click="changeLang('chinese')"></a>
+                </div>
+
+                <div class="row padding-104">
+
+                    <div class="col-md-6">
+
+                        <h1 translate="HEADER_H1"></h1>
+
+                        <p translate="HEADER_P2" class="top30"></p>
 
 
-      </div>
+                        <p class="top30" ng-if="locale=='chinese'">提示: 阅读用户手册: <a
+                                ui-sref="app.manual({ locale : 'chinese' })"><i class="fa fa-book"></i> 指南 -
+                            以太坊(Ethereum)钱包安装教程以及使用以太交易小部件购买以太坊。</a></p>
+
+                        <p class="top30" ng-if="locale=='english'">Tip: Read our manual: <a
+                                ui-sref="app.manual({ locale : 'english' })"><i class="fa fa-book"></i> Manual -
+                            Installation Ethereum wallet - Buy ether with the ether widget.</a></p>
+
+
+                        <!-- <p translate="HEADER_P1" class="top30"></p>-->
+
+
+                    </div>
+
+                    <div class="col-md-6 iframe">
+
+                        <div>
+
+
+                            <iframe ng-src="{{iframe1}}" border="0" scrolling="no" class="innocoin w500 h470"
+                                    ng-if="!test"></iframe>
+
+
+                            <!-- <figure class="stars">
+                               <figcaption>Review stars 5/5</figcaption>
+                             </figure>-->
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
     </header>
-  <div class="spanning">
+</div>
+
+
+
+<div class="spanning">
     <div class="promo clearfix">
-      <div class="wrap">
-        <div class="promo-wrapper clearfix">
-          <div class="promo-column">
-            <img src="assets/images/pin.png" height="32" width="24" alt="">
-            <h5 translate="PROMO_HEADER_1"></h5>
-            <p translate="PROMO_TEXT_1"></p>
-          </div>
-          <div class="promo-column">
-            <img src="assets/images/settings.png" height="32" width="33" alt="">
-            <h5 translate="PROMO_HEADER_2"></h5>
-            <p translate="PROMO_TEXT_2"></p>
-          </div>
-          <div class="promo-column">
-            <img src="assets/images/easy.png" height="32" width="34" alt="">
-            <h5 translate="PROMO_HEADER_3"></h5>
-            <p translate="PROMO_TEXT_3"></p>
-          </div>
-          <div class="promo-column">
-            <img src="assets/images/saturn.png" height="32" width="32" alt="">
-            <h5 translate="PROMO_HEADER_4"></h5>
-            <p translate="PROMO_TEXT_4"></p>
-          </div>
+        <div class="wrap">
+            <div class="promo-wrapper clearfix">
+                <div class="promo-column">
+                    <img src="assets/images/pin.png" height="32" width="24" alt="">
+                    <h5 translate="PROMO_HEADER_1"></h5>
+
+                    <p translate="PROMO_TEXT_1"></p>
+                </div>
+                <div class="promo-column">
+                    <img src="assets/images/settings.png" height="32" width="33" alt="">
+                    <h5 translate="PROMO_HEADER_2"></h5>
+
+                    <p translate="PROMO_TEXT_2"></p>
+                </div>
+                <div class="promo-column">
+                    <img src="assets/images/easy.png" height="32" width="34" alt="">
+                    <h5 translate="PROMO_HEADER_3"></h5>
+
+                    <p translate="PROMO_TEXT_3"></p>
+                </div>
+                <div class="promo-column">
+                    <img src="assets/images/saturn.png" height="32" width="32" alt="">
+                    <h5 translate="PROMO_HEADER_4"></h5>
+
+                    <p translate="PROMO_TEXT_4"></p>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
+
+
+
 
     <div class="video clearfix">
-      <div class="wrap">
-        <div class="video-title" translate="VIDEO_HEADER"></div>
-        <div class="video-subtitle" translate="VIDEO_SUB_HEADER"></div>
-        <div class="video-container">
+        <div class="wrap">
+            <div class="video-title" translate="VIDEO_HEADER"></div>
+            <div class="video-subtitle" translate="VIDEO_SUB_HEADER"></div>
+            <div class="video-container">
 
 
-          <div class="row">
-            <div class="col-md-6">
-              <strong class="text-center" translate="VIDEO_PROBLEM">The problem</strong>
-              <iframe width="100%" height="458" src="https://www.youtube.com/embed/97ufCT6lQcY" frameborder="0" allowfullscreen ng-if="!test"></iframe>
-            </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <strong class="text-center" translate="VIDEO_PROBLEM">The problem</strong>
+                        <iframe width="100%" height="458" src="https://www.youtube.com/embed/97ufCT6lQcY"
+                                frameborder="0" allowfullscreen ng-if="!test"></iframe>
+                    </div>
 
-            <div class="col-md-6">
-              <strong class="text-center" translate="VIDEO_SOLUTION">The solution</strong>
-              <iframe width="100%" height="458" src="https://www.youtube.com/embed/j23HnORQXvs" frameborder="0" allowfullscreen ng-if="!test"></iframe>
-            </div>
+                    <div class="col-md-6">
+                        <strong class="text-center" translate="VIDEO_SOLUTION">The solution</strong>
+                        <iframe width="100%" height="458" src="https://www.youtube.com/embed/j23HnORQXvs"
+                                frameborder="0" allowfullscreen ng-if="!test"></iframe>
+                    </div>
 
-          </div>
+                </div>
 
-        </div>
-      </div>
-
-
-      <div class="wrap small-videos">
-        <div class="row">
-          <div class="col-md-4">
-            <iframe width="100%" height="195" src="https://www.youtube.com/embed/r7GVVk8v2Ik" frameborder="0" allowfullscreen ng-if="!test"></iframe>
-          </div>
-
-          <div class="col-md-4">
-            <iframe width="100%" height="195" src="https://www.youtube.com/embed/Clw-qf1sUZg" frameborder="0" allowfullscreen ng-if="!test"></iframe>
-          </div>
-
-          <div class="col-md-4">
-            <iframe width="100%" height="195" src="https://www.youtube.com/embed/fbEtivJIfIU" frameborder="0" allowfullscreen ng-if="!test"></iframe>
             </div>
         </div>
 
-      </div>
 
+        <div class="wrap small-videos">
+            <div class="row">
+                <div class="col-md-4">
+                    <iframe width="100%" height="195" src="https://www.youtube.com/embed/r7GVVk8v2Ik" frameborder="0"
+                            allowfullscreen ng-if="!test"></iframe>
+                </div>
 
+                <div class="col-md-4">
+                    <iframe width="100%" height="195" src="https://www.youtube.com/embed/Clw-qf1sUZg" frameborder="0"
+                            allowfullscreen ng-if="!test"></iframe>
+                </div>
+
+                <div class="col-md-4">
+                    <iframe width="100%" height="195" src="https://www.youtube.com/embed/fbEtivJIfIU" frameborder="0"
+                            allowfullscreen ng-if="!test"></iframe>
+                </div>
+            </div>
+
+        </div>
 
 
     </div>
 
-    <div class="discover clearfix">
-      <div class="wrap">
+    <div class="trades" class="top20">
+        <div class="wrap">
+            <h2 translate="HEADER_CONVERSIONS" ></h2>
 
-        <div class="row">
-
-          <div class="col-md-6">
-
-            <!--<iframe height="340px" width="300px" id="cf_widget_iframe" data-size="large" style="border: medium none;" src="https://www.worldcoinindex.com/widget/renderWidget?size=large&amp;from=ETH&amp;to=btc&amp;clearstyle=true"></iframe>-->
-
-            <iframe width="95%" height="550" frameborder="0" allowfullscreen="" scrolling="no" allowtransparency="true" src="https://www.tradingview.com/widgetembed/?symbol=POLONIEX%3AETHBTC&amp;interval=5&amp;hidetoptoolbar=1&amp;hidesidetoolbar=1&amp;symboledit=0&amp;saveimage=0&amp;toolbarbg=f1f3f6&amp;studies=&amp;hideideas=1&amp;theme=White&amp;style=1&amp;timezone=Etc%2FUTC&amp;studies_overrides=%7B%7D&amp;overrides=%7B%7D&amp;enabled_features=%5B%5D&amp;disabled_features=%5B%5D&amp;locale=en&amp;utmsource=www.tradingview.com&amp;utmmedium=www.tradingview.com/widget/" id="tradingview_7180d" ng-if="!test"></iframe>
+            <div class="row top30">
 
 
+                <div class="col-md-4" ng-repeat="trade in trades | limitTo:9">
 
-          </div>
+
+                    <div class="conversion">
+                        <p class="date"> {{trade.createdAt | date:'MMM dd HH:mm Z' }} GMT </p><br/>
+
+                        <p class="trade-info"> {{trade['source.actualAmount']}}
+
+                            <i class="cc BTC"></i> BTC
+
+                            <i class="fa fa-arrow-circle-right special-fa" aria-hidden="true"></i>
+                            {{trade['target.amount']}}  <i class="cc ETH"></i> ETH </p>
+                    </div>
+
+                </div>
 
 
-          <div class="col-md-6">
 
-            <div translate="DISCOVER_CONTENT"></div>
-
-            <div class="top50">
-              <a ui-sref="app.chart({ 'locale' : 'english'})" target="_blank"><strong>Click here to open the chart in full screen view</strong> <i class="fa fa-external-link" aria-hidden="true"></i> </a>
             </div>
-          </div>
-
-
         </div>
-      </div>
+    </div>
+
+    <div class="discover clearfix top50">
+        <div class="wrap">
+
+            <div class="row">
+
+                <div class="col-md-6">
+
+                    <!--<iframe height="340px" width="300px" id="cf_widget_iframe" data-size="large" style="border: medium none;" src="https://www.worldcoinindex.com/widget/renderWidget?size=large&amp;from=ETH&amp;to=btc&amp;clearstyle=true"></iframe>-->
+
+                    <iframe width="95%" height="550" frameborder="0" allowfullscreen="" scrolling="no"
+                            allowtransparency="true"
+                            src="https://www.tradingview.com/widgetembed/?symbol=POLONIEX%3AETHBTC&amp;interval=5&amp;hidetoptoolbar=1&amp;hidesidetoolbar=1&amp;symboledit=0&amp;saveimage=0&amp;toolbarbg=f1f3f6&amp;studies=&amp;hideideas=1&amp;theme=White&amp;style=1&amp;timezone=Etc%2FUTC&amp;studies_overrides=%7B%7D&amp;overrides=%7B%7D&amp;enabled_features=%5B%5D&amp;disabled_features=%5B%5D&amp;locale=en&amp;utmsource=www.tradingview.com&amp;utmmedium=www.tradingview.com/widget/"
+                            id="tradingview_7180d" ng-if="!test"></iframe>
+
+
+                </div>
+
+
+                <div class="col-md-6">
+
+                    <div translate="DISCOVER_CONTENT"></div>
+
+                    <div class="top50">
+                        <a ui-sref="app.chart({ 'locale' : 'english'})" target="_blank"><strong>Click here to open the
+                            chart in full screen view</strong> <i class="fa fa-external-link" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
     </div>
 
     <div class="comments clearfix">
-      <div class="wrap">
-        <div class="tab">
-          <div class="box visible">
-            <h4 translate="COMMENTS_TITLE">{{ 'COMMENTS_TITLE' | translate}} {{ 'COMMENTS_LINK' | translate}}</h4>
-            <p translate="COMMENTS_SUBTITLE"></p>
-          </div>
+        <div class="wrap">
+            <div class="tab">
+                <div class="box visible">
+                    <h4 translate="COMMENTS_TITLE">{{ 'COMMENTS_TITLE' | translate}} {{ 'COMMENTS_LINK' |
+                        translate}}</h4>
+
+                    <p translate="COMMENTS_SUBTITLE"></p>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
 
     <div class="simple clearfix">
-      <div class="wrap">
+        <div class="wrap">
 
-        <div class="row">
-          <div class="col-md-8 simple-content-left">
-            <h3 translate="NEWS_TITLE"></h3>
-            <ul>
-              <li>
-                <a href="https://medium.com/@lamassu/lamassu-announces-official-support-for-ethereum-9a4c1d8dc20b#.6b8mkz2qc" target="_blank"><i class="fa fa-newspaper-o"></i> Lamassu Announces Official Support for Ethereum</a>
-              </li>
+            <div class="row">
+                <div class="col-md-8 simple-content-left">
+                    <h3 translate="NEWS_TITLE"></h3>
+                    <ul>
+                        <li>
+                            <a href="https://medium.com/@lamassu/lamassu-announces-official-support-for-ethereum-9a4c1d8dc20b#.6b8mkz2qc"
+                               target="_blank"><i class="fa fa-newspaper-o"></i> Lamassu Announces Official Support for
+                                Ethereum</a>
+                        </li>
 
-              <li>
-                <a href="https://bitcoinmagazine.com/articles/microsoft-partners-with-ethereum-company-offers-cloud-based-blockchain-application-development-platform-to-its-clients-1446484607" target="_blank"><i class="fa fa-newspaper-o"></i>
-                  {{ 'NEWS_LINK_1' | translate }}</a></li>
-              <li><a href="http://www.wired.co.uk/news/archive/2015-11/11/microsoft-ethereum-blockchain-bitcoin" target="_blank"><i class="fa fa-newspaper-o"></i>
-                {{ 'NEWS_LINK_2' | translate }}</a></li>
-              <li><a href="https://medium.com/@kpcb_edge/our-thoughts-on-ethereum-31520b164e00#.kjl6n9wm3" target="_blank"><i class="fa fa-newspaper-o"></i>
-                {{ 'NEWS_LINK_3' | translate }}</a></li>
-              <li><a href="http://www.ibtimes.co.uk/deloitte-delving-into-ethereum-eris-ripple-1515494" target="_blank"><i class="fa fa-newspaper-o"></i>
-                {{ 'NEWS_LINK_4' | translate }}</a></li>
-              <li><a href="http://www.ibtimes.co.uk/ubs-reveals-its-interest-sidechains-well-ethereum-1519706" target="_blank"><i class="fa fa-newspaper-o"></i>
-                {{ 'NEWS_LINK_5' | translate }}</a></li>
-              <li><a href="https://bitcoinmagazine.com/articles/slock-it-to-introduce-smart-locks-linked-to-smart-ethereum-contracts-decentralize-the-sharing-economy-1446746719" target="_blank"><i class="fa fa-newspaper-o"></i>
-                {{ 'NEWS_LINK_6' | translate }}</a></li>
-              <li><a href="http://www.ibtimes.co.uk/bitcoins-smart-sibling-ethereum-only-game-town-banks-build-blockchains-1512726" target="_blank"><i class="fa fa-newspaper-o"></i>
-                {{ 'NEWS_LINK_7' | translate }}</a></li>
-              <li><a href="http://techcrunch.com/2015/08/01/vapor-no-more-ethereum-has-launched/" target="_blank"><i class="fa fa-newspaper-o"></i>
-                {{ 'NEWS_LINK_8' | translate }}</a></li>
-            </ul>
+                        <li>
+                            <a href="https://bitcoinmagazine.com/articles/microsoft-partners-with-ethereum-company-offers-cloud-based-blockchain-application-development-platform-to-its-clients-1446484607"
+                               target="_blank"><i class="fa fa-newspaper-o"></i>
+                                {{ 'NEWS_LINK_1' | translate }}</a></li>
+                        <li>
+                            <a href="http://www.wired.co.uk/news/archive/2015-11/11/microsoft-ethereum-blockchain-bitcoin"
+                               target="_blank"><i class="fa fa-newspaper-o"></i>
+                                {{ 'NEWS_LINK_2' | translate }}</a></li>
+                        <li><a href="https://medium.com/@kpcb_edge/our-thoughts-on-ethereum-31520b164e00#.kjl6n9wm3"
+                               target="_blank"><i class="fa fa-newspaper-o"></i>
+                            {{ 'NEWS_LINK_3' | translate }}</a></li>
+                        <li><a href="http://www.ibtimes.co.uk/deloitte-delving-into-ethereum-eris-ripple-1515494"
+                               target="_blank"><i class="fa fa-newspaper-o"></i>
+                            {{ 'NEWS_LINK_4' | translate }}</a></li>
+                        <li><a href="http://www.ibtimes.co.uk/ubs-reveals-its-interest-sidechains-well-ethereum-1519706"
+                               target="_blank"><i class="fa fa-newspaper-o"></i>
+                            {{ 'NEWS_LINK_5' | translate }}</a></li>
+                        <li>
+                            <a href="https://bitcoinmagazine.com/articles/slock-it-to-introduce-smart-locks-linked-to-smart-ethereum-contracts-decentralize-the-sharing-economy-1446746719"
+                               target="_blank"><i class="fa fa-newspaper-o"></i>
+                                {{ 'NEWS_LINK_6' | translate }}</a></li>
+                        <li>
+                            <a href="http://www.ibtimes.co.uk/bitcoins-smart-sibling-ethereum-only-game-town-banks-build-blockchains-1512726"
+                               target="_blank"><i class="fa fa-newspaper-o"></i>
+                                {{ 'NEWS_LINK_7' | translate }}</a></li>
+                        <li><a href="http://techcrunch.com/2015/08/01/vapor-no-more-ethereum-has-launched/"
+                               target="_blank"><i class="fa fa-newspaper-o"></i>
+                            {{ 'NEWS_LINK_8' | translate }}</a></li>
+                    </ul>
 
-          </div>
+                </div>
 
 
-          <div class="col-md-4 simple-content">
-            <h3 translate="LEARNMORE_TITLE"></h3>
-            <ul>
-              <li class="clearfix"><a href="https://www.ethereum.org" target="_blank"><i class="fa fa-globe"></i>
-                {{ 'LEARNMORE_SITE' | translate }}
-              </a></li>
-              <li class="clearfix"><a href="https://blog.ethereum.org/" target="_blank"><i class="fa fa-file-text-o"></i>
-                {{ 'LEARNMORE_WEBLOG' | translate }}</a></li>
-              <li class="clearfix"><a href="http://forum.ethereum.org/" target="_blank"><i class="fa fa-comments"></i>
-                {{ 'LEARNMORE_FORUM' | translate }}</a></li>
-              <li class="clearfix"><a href="https://www.youtube.com/user/ethereumproject" target="_blank">
-                <i class="fa fa-youtube-square"></i>
-                {{ 'LEARNMORE_YOUTUBE' | translate }}</a></li>
-              <li class="clearfix"><a href="http://ethereum.meetup.com/" target="_blank"><i class="fa fa-beer"></i>
-                {{ 'LEARNMORE_MEETUPS' | translate }}</a></li>
-            </ul>
-          </div>
+                <div class="col-md-4 simple-content">
+                    <h3 translate="LEARNMORE_TITLE"></h3>
+                    <ul>
+                        <li class="clearfix"><a href="https://www.ethereum.org" target="_blank"><i
+                                class="fa fa-globe"></i>
+                            {{ 'LEARNMORE_SITE' | translate }}
+                        </a></li>
+                        <li class="clearfix"><a href="https://blog.ethereum.org/" target="_blank"><i
+                                class="fa fa-file-text-o"></i>
+                            {{ 'LEARNMORE_WEBLOG' | translate }}</a></li>
+                        <li class="clearfix"><a href="http://forum.ethereum.org/" target="_blank"><i
+                                class="fa fa-comments"></i>
+                            {{ 'LEARNMORE_FORUM' | translate }}</a></li>
+                        <li class="clearfix"><a href="https://www.youtube.com/user/ethereumproject" target="_blank">
+                            <i class="fa fa-youtube-square"></i>
+                            {{ 'LEARNMORE_YOUTUBE' | translate }}</a></li>
+                        <li class="clearfix"><a href="http://ethereum.meetup.com/" target="_blank"><i
+                                class="fa fa-beer"></i>
+                            {{ 'LEARNMORE_MEETUPS' | translate }}</a></li>
+                    </ul>
+                </div>
 
+            </div>
         </div>
-      </div>
     </div>
 
     <div class="real-content clearfix">
-      <div class="wrap">
+        <div class="wrap">
 
 
-        <div class="row">
-          <div class="col-md-5">
+            <div class="row">
+                <div class="col-md-5">
 
 
-            <img src="assets/images/ethereum-city.jpg">
+                    <img src="assets/images/ethereum-city.jpg">
 
-            <img src="assets/images/ethereum-smartcity.jpg">
+                    <img src="assets/images/ethereum-smartcity.jpg">
 
-            <img src="assets/images/ethereum-electricity.png">
-
-
-          </div>
+                    <img src="assets/images/ethereum-electricity.png">
 
 
-          <div class="col-md-7">
+                </div>
 
-            <h3 translate="REALCONTENT_TITLE">Why we think Ethereum has a bright future</h3>
 
-            <p translate="REALCONTENT_P1"></p>
-            <p translate="REALCONTENT_P2"></p>
-            <p translate="REALCONTENT_P3"></p>
-            <p translate="REALCONTENT_P4"></p>
-            <p translate="REALCONTENT_P5"></p>
-            <p translate="REALCONTENT_P6"></p>
-            <p translate="REALCONTENT_P7"></p>
-            <p translate="REALCONTENT_P8"></p>
+                <div class="col-md-7">
 
-          </div>
+                    <h3 translate="REALCONTENT_TITLE">Why we think Ethereum has a bright future</h3>
 
+                    <p translate="REALCONTENT_P1"></p>
+
+                    <p translate="REALCONTENT_P2"></p>
+
+                    <p translate="REALCONTENT_P3"></p>
+
+                    <p translate="REALCONTENT_P4"></p>
+
+                    <p translate="REALCONTENT_P5"></p>
+
+                    <p translate="REALCONTENT_P6"></p>
+
+                    <p translate="REALCONTENT_P7"></p>
+
+                    <p translate="REALCONTENT_P8"></p>
+
+                </div>
+
+
+            </div>
 
         </div>
-
-      </div>
     </div>
-
 
 
     <!-- <div class="newsletter clearfix">
@@ -281,7 +357,7 @@
          <p>If you want to recieve monthly updates from us just pop your email in the box. We think that spam is for jerks. And we are no jerks.</p>
        </div>
      </div>-->
-  </div>
+</div>
 </div>
 <!-- /.main -->
 <!-- DOWNLOAD BEGIN --><!--
@@ -293,13 +369,13 @@
 </section>-->
 <!-- DOWNLOAD END -->
 <footer>
-  <div class="layer">
-  <div class="wrap">
-    <p>&copy; {{ date | date:'yyyy'}}&nbsp;<strong>Buy Ether</strong>, All Rights Reserved</p>
-   <!-- <figure class="stars">
-      <figcaption>Review stars 5/5</figcaption>
-    </figure>-->
-  </div>
-  </div>
+    <div class="layer">
+        <div class="wrap">
+            <p>&copy; {{ date | date:'yyyy'}}&nbsp;<strong>Buy Ether</strong>, All Rights Reserved</p>
+            <!-- <figure class="stars">
+               <figcaption>Review stars 5/5</figcaption>
+             </figure>-->
+        </div>
+    </div>
 </footer>
 

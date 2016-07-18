@@ -16,14 +16,14 @@
         url: '',
         templateUrl: 'app/main/main.html',
         controller: 'MainController',
-        controllerAs: 'main',
+        controllerAs: 'vm',
         data: {
           english : {
             pageTitle : 'Buy Ethereum (Buy Ether /ETH)',
-            pageDescription : 'You can buy ethereum with bitcoin (buy ethers) on buy-ether.com. Ether (ETH) is a tradeable private asset.'
+            pageDescription : 'Buy ethereum with bitcoin (buy ethers) on buy-ether.com. Ether (ETH) is a tradeable private asset.'
           },
           chinese : {
-            pageTitle : '购买 Ether (以太坊 Ethereum)',
+            pageTitle : '以太坊 - 购买 以太坊 (Ether / Ethereum)',
             pageDescription : '以太坊(ETH)是一种可交易的资产, 很快你将可以从这里购买到以太坊.'
           }
         }

@@ -4,7 +4,6 @@
 
   angular
     .module('buyEther4Com')
-    .constant('malarkey', malarkey)
     .constant('moment', moment);
 
 })();
