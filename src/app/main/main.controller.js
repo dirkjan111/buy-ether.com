@@ -11,7 +11,7 @@
 
       $scope.baseUrl = 'https://swap.innocoin.com/#/';
 
-      $http.get('https://api.innocoin.com/v1/latest/5').then(function(response) {
+      $http.get('https://api.innocoin.com/v1/latest/24').then(function(response) {
 
           var resp = response.data;
 
@@ -28,17 +28,29 @@
           $scope.iframe1 =  $sce.trustAsResourceUrl($scope.baseUrl + '?language=' + language + '&partner_email=partner@innocoin.com&partner_name=buy-ether.com&partner_address=3BfKMdyXzG8e8oHCb6YSGVRdASZ3XW6xni&partner_margin=1.25&source=BTC&target=ETH&target_amount=2.5&show_info=true&theme=brushed_alu&rounded_corners=true&border=false&iframe=true');
       };
 
+
+      $scope.setMomentLang = function(lang) {
+          if(lang === 'english') {
+              moment.locale('en');
+          } else {
+              moment.locale('zh-cn');
+          }
+      };
+
       $scope.changeLang = function(lang) {
 
-          //var xlang = (lang === 'english') ? '' : lang;
+          var xlang = (lang === 'english') ? 'en' : 'zh-cn';
 
           $rootScope.locale = lang;
           $translate.use(lang);
 
           $state.go('app.root', { 'locale' : lang }).then(function() {
+              /*amMoment.changeLocale(xlang);*/
+              $scope.setMomentLang(lang);
               $scope.updateIframes(lang);
           });
       };
+
 
       $scope.updateIframes($rootScope.locale);
 

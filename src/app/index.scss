@@ -45,7 +45,8 @@ $icon-font-path: "../../bower_components/bootstrap-sass/assets/fonts/bootstrap/"
 .top30 {margin-top:30px;}
 .top40 {margin-top:40px;}
 .top50 {margin-top:50px;}
-
+.top75 {margin-top:75px;}
+.top100 {margin-top:100px;}
 
 iframe.shadow {
   box-shadow: 3px 3px 3px #666;
@@ -53,7 +54,6 @@ iframe.shadow {
 
 div.conversion {
   background-color:#eee;
-  padding:1rem;
   margin:1rem 0;
   text-align: center;
 }
@@ -64,10 +64,12 @@ div.conversion {
   margin:0 1rem;
 }
 
-p.trade-info {
+.trade-info {
   color:#333;
+  background-color:rgba(0,0,0,.05);
   vertical-align: middle;
   font-size:1.5rem;
+  padding:.5rem 0;
   i,i.cc {
     vertical-align: middle;
   }
