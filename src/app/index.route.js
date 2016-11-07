@@ -31,7 +31,7 @@
           url: '/manual-ethereum-wallet-installation-and-performing-btc-eth-exchange',
           templateUrl: 'app/content/manual.html',
           controller: 'ManualController',
-          controllerAs: 'manual',
+          controllerAs: 'vm',
           data: {
             english: {
               pageTitle: 'Ethereum wallet installation',

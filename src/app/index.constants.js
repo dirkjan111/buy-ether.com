@@ -3,7 +3,6 @@
   'use strict';
 
   angular
-    .module('buyEther4Com')
-    .constant('moment', moment);
+    .module('buyEther4Com');
 
 })();
