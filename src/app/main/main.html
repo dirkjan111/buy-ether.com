@@ -5,7 +5,7 @@
 
             <div class="logo">
                 <div class="wrap">
-                    <a ui-sref="home"><img src="/assets/images/logo.png"/></a>
+                    <a ui-sref="app.root"><img src="/assets/images/logo.png"/></a>
                 </div>
                 <hr/>
             </div>
@@ -61,6 +61,9 @@
                 </div>
             </div>
         </div>
+        <div class="ticker-main">
+            <iframe class="ticker-widget" id="ticker" ng-src="{{vm.iframe3}}" class="ticker-widget hidden" ng-if="!test"></iframe>
+        </div>
     </header>
 </div>
 
@@ -70,7 +73,7 @@
         <h3 translate="HEADER_CONVERSIONS" class="section-heading"></h3>
 
         <div class="trades-container">
-            <iframe ng-src="{{vm.iframe2}}" ng-if="!debug" class="top20"></iframe>
+            <iframe ng-src="{{vm.iframe2}}" ng-if="!debug" class="trades-widget top20"></iframe>
         </div>
     </div>
 </div>

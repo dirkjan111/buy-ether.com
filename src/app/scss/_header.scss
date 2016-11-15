@@ -59,6 +59,10 @@ header {
                 height:20vmin;
             }
 
+            &:hover {
+                cursor:pointer!important;
+            }
+
 
         }
         hr {
@@ -191,4 +195,11 @@ figure.stars {
     figcaption {
         display: none;
     }
+}
+
+.ticker.main {
+    background-color: rgba(0,0,0,.5);
+    position: absolute;
+    bottom:0;
+    left:0; right:0;
 }

@@ -29,7 +29,7 @@
                     <div class="row col-md-12 top50">
 
                         <div class="col-md-6">
-                            <iframe ng-src="{{iframe1}}" border="0" scrolling="no" class="innocoin w500 h470" ng-if="!test"></iframe>
+                            <iframe ng-src="{{vm.iframe1}}" border="0" scrolling="no" class="innocoin w500 h470" ng-if="!test"></iframe>
                         </div>
 
                         <div class="col-md-6">
@@ -64,6 +64,9 @@
                 </div>
             </div>
 
+        </div>
+        <div class="ticker-main">
+            <iframe class="ticker-widget" id="ticker" ng-src="{{vm.iframe3}}" class="ticker-widget hidden" ng-if="!test"></iframe>
         </div>
     </header>
 
@@ -131,7 +134,7 @@
 
                     <p>A wallet functions the same as an account but does contain transactions. Before you can create a
                         wallet (in which you can see transactions), you need some Ether in your Etherbase account to pay
-                        for the wallet. This is only a very small amount buyt by charging the user, spam and abuse is
+                        for the wallet. This is only a very small amount but by charging the user, spam and abuse is
                         prevented.</p>
 
                 </div>
@@ -201,10 +204,10 @@
 
                     <p>You also need to provide the number of ETH you want to order.</p>
 
-                    <p>At the moment there is a max of {{max}} BTC worth of Ether that can be bought through the
+                    <p>At the moment there is a max of {{vm.max | number : 4 }} BTC worth of Ether that can be bought through the
                         widget.</p>
 
-                    <p>If you want to buy the maximum amount of Ether, you can just fill in {{max}} BTC in the BTC input
+                    <p>If you want to buy the maximum amount of Ether, you can just fill in {{vm.max | number : 4 }} BTC in the BTC input
                         field. The right number of ETH is automatically calculated.</p>
 
                     <p>You also need to provide your e-mail address, there you will receive updates of the order
@@ -299,7 +302,7 @@
                     <div class="row col-md-12 top50">
 
                         <div class="col-md-6">
-                            <iframe ng-src="{{iframe1}}" border="0" scrolling="no" class="innocoin w500 h470"
+                            <iframe ng-src="{{vm.iframe1}}" border="0" scrolling="no" class="innocoin w500 h470"
                                     ng-if="!test"></iframe>
                         </div>
 
@@ -325,6 +328,9 @@
                     </div>
                 </div>
             </div>
+        </div>
+        <div class="ticker-main">
+            <iframe class="ticker-widget" id="ticker" ng-src="{{vm.iframe3}}" class="ticker-widget hidden" ng-if="!test"></iframe>
         </div>
     </header>
 
@@ -445,9 +451,9 @@
 
                     <p>必须提供要购买的以太坊数量.</p>
 
-                    <p>目前, 在该小窗口只能一次性购买不超过等值[{{max}} BTC]的以太坊.</p>
+                    <p>目前, 在该小窗口只能一次性购买不超过等值[{{vm.max | number : 4 }} BTC]的以太坊.</p>
 
-                    <p>如果你想要购买最大数量的以太坊, 请直接在BTC数额区域输入数值[{{max}} BTC], 等值的以太坊数量将会直接被计算出来.</p>
+                    <p>如果你想要购买最大数量的以太坊, 请直接在BTC数额区域输入数值[{{vm.max | number : 4 }} BTC], 等值的以太坊数量将会直接被计算出来.</p>
 
                     <p>同时必须提供你的邮箱地址以接受订单受理进度的提示邮件, 在按下绿色的确认键后你将第一封提示邮件.</p>
 
